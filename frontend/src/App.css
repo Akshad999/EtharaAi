@@ -1,0 +1,33 @@
+/* Custom App Styles */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+  margin-top: 70px; /* Navbar height */
+}
+
+.content-with-sidebar {
+  margin-left: 260px; /* Sidebar width */
+  flex: 1;
+  padding: 20px;
+  min-height: calc(100vh - 70px);
+}
+
+.content-full {
+  flex: 1;
+  width: 100%;
+}
+
+.loading-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
