@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Use VITE_API_URL if provided, else use relative /api in production, or localhost in development
-const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://localhost:5000/api');
+// Force '/api' in production (monolith), otherwise use VITE_API_URL or fallback to localhost
+const API_URL = import.meta.env.PROD ? '/api' : (import.meta.env.VITE_API_URL || 'http://localhost:5000/api');
 
 const api = axios.create({
   baseURL: API_URL,
