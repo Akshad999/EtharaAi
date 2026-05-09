@@ -1,2 +1,25 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Environment files
 .env
+.env.*
+!.env.example
+
+# Build folders
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Git folders inside nested projects
+.git/
