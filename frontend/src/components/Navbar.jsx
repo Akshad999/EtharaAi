@@ -79,35 +79,66 @@ const Navbar = () => {
           background: var(--glass-bg);
           color: var(--text-main);
         }
-        .user-profile {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          padding: 6px 12px;
-          background: #ecfdf5;
-          border-radius: 12px;
-        }
-        .user-avatar {
-          width: 32px;
-          height: 32px;
-          background: var(--primary);
-          border-radius: 8px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .user-info {
-          display: flex;
-          flex-direction: column;
-        }
-        .user-name {
-          font-size: 0.85rem;
-          font-weight: 600;
-        }
-        .user-role {
-          font-size: 0.7rem;
-          color: var(--text-muted);
-        }
+      .user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 14px;
+
+  background: rgba(255,255,255,0.06);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 14px;
+
+  backdrop-filter: blur(14px);
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+
+  color: white;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 6px 18px rgba(99,102,241,0.35);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  color: #ffffff !important;
+
+  line-height: 1.1;
+}
+
+.user-role {
+  font-size: 0.72rem;
+
+  color: #94a3b8;
+
+  text-transform: capitalize;
+}
         .logout-btn {
           background: transparent;
           border: none;
